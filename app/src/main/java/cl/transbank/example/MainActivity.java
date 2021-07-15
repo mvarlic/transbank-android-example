@@ -76,34 +76,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
-
-    /*
-    private void openWebPay2(){
-        WebView webView = (WebView) findViewById(R.id.webPayWebView);
-        final WebSettings settings = webView.getSettings();
-        settings.setJavaScriptEnabled(true);
-        //settings.setDomStorageEnabled(true);
-
-        // habilitar el Cookie Manager. Depende del nivel de la API de Android que se utilice se habilita de diferente forma
-        if (android.os.Build.VERSION.SDK_INT >= 21)
-            CookieManager.getInstance().setAcceptThirdPartyCookies(webView, true); // myWebPayView es el WebView
-        else
-            CookieManager.getInstance().setAcceptCookie(true);
-        // Asignar el caché en el webview
-        webView.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
-
-        webView.loadUrl("http://10.0.2.2:3000/webpay-plus/create");
-    }*/
-
-
-
-
-
-
-
-
     /*
     public void sendMessage(View view) {
         Intent intent = new Intent(this, DisplayMessageActivity.class);
@@ -113,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }*/
 
-
+    /*
     public void get(){
         // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(this);
@@ -136,11 +108,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Add the request to the RequestQueue.
         queue.add(stringRequest);
-    }
+    }*/
 
-
-
-
+    /*
     private void getPosts() {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://jsonplaceholder.typicode.com")
@@ -164,13 +134,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    */
 
-
-
-
-
-
-
+    /*
     private void createTransaction() {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(BACKEND_URL)
@@ -193,5 +159,5 @@ public class MainActivity extends AppCompatActivity {
                 t.printStackTrace();
             }
         });
-    }
+    }*/
 }

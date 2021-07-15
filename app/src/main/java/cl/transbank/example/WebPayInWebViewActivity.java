@@ -51,7 +51,7 @@ public class WebPayInWebViewActivity extends AppCompatActivity {
                 }
                 else {
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                    startActivity( intent );
+                    startActivity( intent );//NOTA: arrojara excepcion si no encuentra el app a abrir
                 }
                 return true;//Indicates WebView to NOT load the url;
             }
