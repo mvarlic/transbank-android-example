@@ -32,7 +32,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class MainActivity extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE = "cl.transbank.example.MESSAGE";
-    public static final String BACKEND_URL = "http://10.0.2.2:3000";
+    public static final String BACKEND_URL = "https://transbank-android-backend-node.herokuapp.com";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openWebPay(int productId){
-        String url = "http://10.0.2.2:3000/webpay-plus/create?from=browser_android&producId=" + productId;
+        String url = "https://transbank-android-backend-node.herokuapp.com/webpay-plus/create?from=browser_android&producId=" + productId;
         Log.i("openWebPay",url);
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
